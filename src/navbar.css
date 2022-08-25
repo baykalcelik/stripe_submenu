@@ -1,0 +1,261 @@
+
+.navbarCover{
+    width:100%;
+    /* margin: 0 auto; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    margin: 0px;
+
+}
+
+.logoImg{
+    width:auto;
+    height: auto;
+
+}
+
+.navMenu{
+    display: flex;
+    gap:3rem;
+    /* position: relative; */
+
+}
+
+
+.signinBtn{
+    padding: 0.4rem 0.9rem;
+    color:white;
+    background-color: rgb(6, 6, 73);
+    border-radius: 5px;
+    border:none;
+    font-size: 1rem;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s;
+}
+
+.signinBtn:hover{
+    color:white;
+    background-color: rgb(61, 61, 187);
+
+}
+
+
+.misubmenu{
+    width: auto;
+    /* padding: 0.5rem; */
+    border-radius: 5px;
+    background-color: white;
+    color:rgb(16, 16, 84);
+    position:absolute;
+    top:5rem;
+    transform:translateX(-50%);
+    height:fit-content;
+    box-shadow: 3px 3px 10px 5px rgba(0,0,0,0.3);
+    transition: all 0.5s;
+    /* display: none; */
+
+}
+
+.ucgen{
+    /* width:15px;
+    height:15px; */
+    /* background-color: red; */
+    margin:0 auto;
+    margin-top: -0.5rem;
+
+    width: 0;
+	height: 0;
+	border-left: 0.3rem solid transparent;
+	border-right: 0.3rem solid transparent;
+	border-bottom: 0.5rem solid white;
+
+
+}
+
+
+/* .subitem{
+
+} */
+
+.subitemHeader{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 2rem 0rem 0rem 2rem;
+}
+
+.siicon{
+    display: block;
+    font-size: 1rem;
+    /* margin: 0rem 0rem 1rem 1rem; */
+}
+
+.silabel{
+    display: block;
+    font-size: 1rem;
+    text-transform: capitalize;
+    /* margin: 0rem 1rem 1rem 1rem; */
+
+}
+
+.secondCover{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 2rem;
+
+}
+
+.subitem{
+    display: flex;
+    align-items:center;
+    gap:1rem;
+    text-decoration: none;
+    color:rgb(16, 16, 84);
+
+
+}
+
+
+
+.hamburgermenu{
+    font-size: 2.5rem;
+    color:rgb(73,166,233);
+    transition: all 0.5s;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    cursor:pointer;
+    background-color: rgb(16, 16, 84);
+    color:white;
+
+}
+
+
+.hamburgermenu:hover{
+    border-radius: 5px;
+    background-color: rgb(24, 160, 6);
+    color:white;
+    /* background-color: aquamarine; */
+
+}
+
+.gizle{
+    height: 0px;
+}
+
+.goster{
+    height: auto;
+}
+
+
+.alternativeMenuCover{
+    display: none;
+
+}
+
+.ampanel{
+    display: none;
+
+}
+
+
+@media all and (max-width:800px){
+
+
+    
+.alternativeMenuCover{
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    left:0rem;
+    top:0rem;
+
+    width:100vw;
+    height: 100vh;
+    z-index: 101;
+    background-color: rgba(0,0,0,0.3);
+
+}
+
+.ampanel{
+    padding-left: 1rem;
+    width:90%;
+    min-height:90vh;
+    background-color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* gap:1rem; */
+    flex-direction: column;
+    padding-bottom: 2rem;
+
+}
+
+
+    .navMenu{
+        display: none;
+    }
+    
+    
+    .signinBtn{
+        display: none;
+    }
+
+
+    .hamburgermenu{
+        display: flex;
+    
+    }
+
+    .misubmenu{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position:static;
+        margin:0px;
+        top:0rem;
+        left:0rem;
+        transform:none;
+        width:80%;
+        box-shadow: none;
+        margin-bottom: 1.5rem;
+
+        /* left:0px; */
+    }
+
+    .modalClose{
+        text-align: right;
+        font-size: 2rem;
+        display: block;
+        align-self: flex-end;
+        margin: 1rem 1rem 0rem 0rem;
+        cursor:pointer;
+
+    }
+    
+    .secondCover{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 0rem 1rem;
+
+    }
+
+    .subitemHeader{
+        padding: 1rem;
+    }
+
+    
+}

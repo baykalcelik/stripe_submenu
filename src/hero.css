@@ -1,0 +1,107 @@
+
+
+.heroCover{
+    width: 100%;
+    display: flex;
+    /* gap: 5rem; */
+    justify-content: space-between;
+
+}
+
+.leftSide{
+    width: 62%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.heroheader{
+    font-size: 6vw;
+    font-weight: bolder;
+    color:rgb(16,42,66);
+    line-height: 1;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    user-select: none;
+
+}
+
+.heroContext{
+    font-size: 2vw;
+    /* font-size: 1.3rem; */
+    font-weight: 400;
+    /* letter-spacing: 1px; */
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgba(43, 109, 170, 0.5);
+    user-select: none;
+
+}
+
+
+.heroBtn{
+    width: 6rem;
+    padding: 0.4rem 0.5rem;
+    color:white;
+    background-color: rgb(6, 6, 73);
+    border-radius: 5px;
+    border:none;
+    font-size: 1rem;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s;
+}
+
+.heroBtn:hover{
+    color:white;
+    background-color: rgb(61, 61, 187);
+
+}
+
+
+
+.rightSide{
+   
+    min-width: 30%;
+    padding:0px;
+    margin:0px;
+
+
+}
+
+.phoneimg{
+    width: 70%;
+    height: auto;
+
+}
+
+@media all and (max-width:800px){
+
+    .leftSide{
+        width:90%;
+    }
+
+    .rightSide{
+        display: none;
+    }
+
+    .heroheader{
+        font-size: 9vw;
+    }
+
+    .heroContext{
+        font-size: 3vw;
+    
+    }
+
+}
+
+@media all and (max-width:500px){
+
+    .heroContext{
+        font-size: 4vw;
+    
+    }
+
+}
